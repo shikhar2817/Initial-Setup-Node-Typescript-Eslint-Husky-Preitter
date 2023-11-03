@@ -2,7 +2,6 @@ import { Request, Response } from 'express';
 import cors from 'cors';
 import { PORT } from './env';
 import expressConfig from './express.config';
-import router from './router';
 
 const app = expressConfig();
 
