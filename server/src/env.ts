@@ -1,6 +1,6 @@
-const config = process.env.ENV !== "production" ? await import("dotenv") : null;
+import * as dotenv from 'dotenv';
 
-if (config) config.config();
+dotenv.config();
 
 const PORT = process.env.PORT || 5000;
 
